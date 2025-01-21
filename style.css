@@ -3,9 +3,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: "Poppins", serif;
-} 
+}
 
 body {
     text-align: center;
@@ -58,4 +58,30 @@ h1 {
 #sec {
     background-color: #f4f8f2;
     color: black;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        justify-content: space-around;
+        margin-right: 50px;
+    }
+
+    #hours,
+    #mins,
+    #sec {
+        height: 90px;
+        width: 90px;
+        font-size: 32px;
+    }
 }
